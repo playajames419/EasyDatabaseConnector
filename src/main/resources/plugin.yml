@@ -1,0 +1,6 @@
+name: TDSDatabaseConnector
+version: '${project.version}'
+main: me.playajames.tdsdbconnector.TDSDatabaseConnector
+api-version: 1.17
+load: STARTUP
+authors: [ playajames ]

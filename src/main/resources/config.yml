@@ -1,0 +1,21 @@
+# Database Configuration Section
+host: localhost
+port: 3306
+username: username
+password: password
+table: table
+
+# General Setting Section
+debug: false
+
+# DataSource Configuration Section(For Advanced Users)
+dataSource.cachePrepStmts: true
+dataSource.prepStmtCacheSize: 250
+dataSource.prepStmtCacheSqlLimit: 2048
+dataSource.useServerPrepStmts: true
+dataSource.useLocalSessionState: true
+dataSource.rewriteBatchedStatements: true
+dataSource.cacheResultSetMetadata: true
+dataSource.cacheServerConfiguration: true
+dataSource.elideSetAutoCommits: true
+dataSource.maintainTimeStats: false
