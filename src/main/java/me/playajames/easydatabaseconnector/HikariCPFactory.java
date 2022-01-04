@@ -1,4 +1,4 @@
-package me.playajames.tdsdbconnector;
+package me.playajames.easydatabaseconnector;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
@@ -13,7 +13,7 @@ public class HikariCPFactory {
     private static final HikariDataSource ds;
 
     static {
-        FileConfiguration pluginConfig = TDSDatabaseConnector.getPlugin(TDSDatabaseConnector.class).getConfig();
+        FileConfiguration pluginConfig = EasyDatabaseConnector.getPlugin(EasyDatabaseConnector.class).getConfig();
         config.setJdbcUrl(parseJdbcUrl(pluginConfig));
         config.setUsername(pluginConfig.getString("username"));
         config.setPassword(pluginConfig.getString("password"));
@@ -39,8 +39,8 @@ public class HikariCPFactory {
         try {
             connection = ds.getConnection();
         } catch (SQLException throwables) {
-            if (me.playajames.tdsdbconnector.TDSDatabaseConnector.DEBUG) throwables.printStackTrace();
-            TDSDatabaseConnector.getPlugin(TDSDatabaseConnector.class).getLogger().warning("Invalid database configuration.");
+            if (EasyDatabaseConnector.DEBUG) throwables.printStackTrace();
+            EasyDatabaseConnector.getPlugin(EasyDatabaseConnector.class).getLogger().warning("Invalid database configuration.");
         }
         return connection;
     }

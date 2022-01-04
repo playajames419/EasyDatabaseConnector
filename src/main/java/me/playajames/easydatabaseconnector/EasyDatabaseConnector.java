@@ -1,9 +1,9 @@
-package me.playajames.tdsdbconnector;
+package me.playajames.easydatabaseconnector;
 
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class TDSDatabaseConnector extends JavaPlugin {
+public final class EasyDatabaseConnector extends JavaPlugin {
 
     public static boolean DEBUG;
 
@@ -13,12 +13,12 @@ public final class TDSDatabaseConnector extends JavaPlugin {
         setConfigSettings();
         if (!checkDatabaseConnection()) return;
         getLogger().info("Database connection established.");
-        this.getLogger().info("TDSDatabaseConnector has been enabled.");
+        this.getLogger().info("EasyDatabaseConnector has been enabled.");
     }
 
     @Override
     public void onDisable() {
-        this.getLogger().info("TDSDatabaseConnector has been disabled.");
+        this.getLogger().info("EasyDatabaseConnector has been disabled.");
     }
 
     private void setConfigSettings() {

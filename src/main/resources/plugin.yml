@@ -1,6 +1,6 @@
-name: TDSDatabaseConnector
+name: EasyDatabaseConnector
 version: '${project.version}'
-main: me.playajames.tdsdbconnector.TDSDatabaseConnector
+main: me.playajames.easydatabaseconnector.EasyDatabaseConnector
 api-version: 1.17
 load: STARTUP
 authors: [ playajames ]
