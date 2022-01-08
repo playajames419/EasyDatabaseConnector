@@ -1,6 +1,6 @@
 name: EasyDatabaseConnector
 version: '${project.version}'
 main: me.playajames.easydatabaseconnector.EasyDatabaseConnector
-api-version: 1.17
+api-version: 1.18
 load: STARTUP
 authors: [ playajames ]
