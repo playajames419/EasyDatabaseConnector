@@ -6,7 +6,7 @@ Easily access your database in many plugins with minimal configuration
 
 This API allows developers to access a database across multiple plugins by simply adding the API as a dependency to their projects. Configure once, use on any project!
 
-##Features
+## Features
 
 * Object oriented database access using [Jooq](https://www.jooq.org/)
 * Connection pool and cache management using [HikariCP](https://github.com/brettwooldridge/HikariCP)
