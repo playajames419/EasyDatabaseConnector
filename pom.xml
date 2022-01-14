@@ -65,15 +65,15 @@
                 <configuration>
                     <jdbc>
                         <driver>com.mysql.cj.jdbc.Driver</driver>
-                        <url>jdbc:mysql://localhost:3306/thedrugserver</url>
-                        <user>tds_user</user>
-                        <password>O@(Erbolc*DLcBFB</password>
+                        <url>jdbc:mysql://localhost:3306/database-name</url>                    <!-- Put database host:port/database-name here -->
+                        <user>username</user>                                                   <!-- Put database username here -->
+                        <password>password</password>                                           <!-- Put database password here -->
                     </jdbc>
                     <generator>
                         <name>org.jooq.codegen.JavaGenerator</name>
                         <database>
                             <name>org.jooq.meta.mysql.MySQLDatabase</name>
-                            <inputSchema>thedrugserver</inputSchema>
+                            <inputSchema>tds</inputSchema>                                      <!-- Put database name here -->
                             <includes>.*</includes>
                         </database>
                         <target>
@@ -114,7 +114,7 @@
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.17.1-R0.1-SNAPSHOT</version>
+            <version>1.18.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
